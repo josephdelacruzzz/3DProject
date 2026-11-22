@@ -5,5 +5,6 @@ public enum ItemId
     GreenRoomKey,
     KeyHandle,
     KeyBlade,
-    KeyTeeth
+    KeyTeeth,
+    GateKey
 }
