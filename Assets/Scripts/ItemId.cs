@@ -2,5 +2,8 @@ public enum ItemId
 {
     RedRoomKey,
     BlueRoomKey,
-    GreenRoomKey
+    GreenRoomKey,
+    KeyHandle,
+    KeyBlade,
+    KeyTeeth
 }
