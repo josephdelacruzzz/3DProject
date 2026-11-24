@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MonsterAI : MonoBehaviour
-{
+public class MonsterMovement : MonoBehaviour {
     [Header("Movement")]
     [SerializeField] private float patrolSpeed = 2f;
     [SerializeField] private float chaseSpeed = 4f;
@@ -22,27 +21,22 @@ public class MonsterAI : MonoBehaviour
     private int currentPatrolPoint;
     private bool chasing;
 
-    private void Awake()
-    {
+    private void Awake() {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
     }
 
-    private void Start()
-    {
+    private void Start() {
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
-        if (playerObject != null)
-        {
+        if (playerObject != null) {
             player = playerObject.transform;
         }
-        else
-        {
-            Debug.LogError("MonsterAI could not find an object tagged Player.");
+        else {
+            Debug.LogError("Monster could not find an object tagged Player.");
         }
 
-        if (!agent.isOnNavMesh)
-        {
+        if (!agent.isOnNavMesh) {
             Debug.LogError("The Hound is not standing on the NavMesh.");
             return;
         }
@@ -51,93 +45,67 @@ public class MonsterAI : MonoBehaviour
         MoveToNextPatrolPoint();
     }
 
-    private void Update()
-    {
-        if (!agent.isOnNavMesh)
-        {
+    private void Update() {
+        if (!agent.isOnNavMesh) {
             return;
         }
 
-        if (player != null)
-        {
-            float distanceToPlayer =
-                Vector3.Distance(transform.position, player.position);
+        if (player != null) {
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            if (!chasing && distanceToPlayer <= detectionDistance)
-            {
+            if (!chasing && distanceToPlayer <= detectionDistance) {
                 StartChasing();
             }
-            else if (chasing && distanceToPlayer > loseDistance)
-            {
+            else if (chasing && distanceToPlayer > loseDistance) {
                 StopChasing();
             }
         }
 
-        if (chasing)
-        {
+        if (chasing) {
             ChasePlayer();
-        }
-        else
-        {
+        } else {
             Patrol();
         }
 
-        if (animator != null)
-        {
+        if (animator != null) {
             animator.SetFloat("Speed", agent.velocity.magnitude);
         }
     }
 
-    private void Patrol()
-    {
-        if (patrolPoints == null || patrolPoints.Length == 0)
-        {
+    private void Patrol() {
+        if (patrolPoints == null || patrolPoints.Length == 0) {
             return;
         }
 
-        if (!agent.pathPending &&
-            agent.remainingDistance <= pointStopDistance)
-        {
-            currentPatrolPoint =
-                (currentPatrolPoint + 1) % patrolPoints.Length;
-
+        if (!agent.pathPending && agent.remainingDistance <= pointStopDistance) {
+            currentPatrolPoint = (currentPatrolPoint + 1) % patrolPoints.Length;
             MoveToNextPatrolPoint();
         }
     }
 
-    private void MoveToNextPatrolPoint()
-    {
-        if (patrolPoints == null ||
-            patrolPoints.Length == 0 ||
-            !agent.isOnNavMesh)
-        {
+    private void MoveToNextPatrolPoint() {
+        if (patrolPoints == null || patrolPoints.Length == 0 || !agent.isOnNavMesh) {
             return;
         }
 
         agent.speed = patrolSpeed;
-        agent.SetDestination(
-            patrolPoints[currentPatrolPoint].position
-        );
+        agent.SetDestination( patrolPoints[currentPatrolPoint].position);
     }
 
-    private void StartChasing()
-    {
+    private void StartChasing() {
         chasing = true;
         agent.speed = chaseSpeed;
 
         Debug.Log("Hound started chasing the player.");
     }
 
-    private void ChasePlayer()
-    {
-        if (player != null)
-        {
+    private void ChasePlayer() {
+        if (player != null) {
             agent.SetDestination(player.position);
         }
     }
 
-    private void StopChasing()
-    {
+    private void StopChasing() {
         chasing = false;
         agent.speed = patrolSpeed;
 

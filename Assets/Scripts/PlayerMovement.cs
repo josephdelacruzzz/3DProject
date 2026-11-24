@@ -1,8 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerMovement : MonoBehaviour
-{
+public class PlayerMovement : MonoBehaviour {
     public float walkSpeed = 4f;
     public float sprintSpeed = 7f;
     public float gravity = -20f;
@@ -10,30 +9,21 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 verticalVelocity;
 
-    private void Awake()
-    {
+    private void Awake() {
         controller = GetComponent<CharacterController>();
     }
 
-    private void Update()
-    {
+    private void Update(){
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        Vector3 movement =
-            transform.right * horizontalInput +
-            transform.forward * verticalInput;
-
+        Vector3 movement = transform.right * horizontalInput + transform.forward * verticalInput;
         movement = movement.normalized;
 
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift)
-            ? sprintSpeed
-            : walkSpeed;
-
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed;
         controller.Move(movement * currentSpeed * Time.deltaTime);
 
-        if (controller.isGrounded && verticalVelocity.y < 0)
-        {
+        if (controller.isGrounded && verticalVelocity.y < 0){
             verticalVelocity.y = -2f;
         }
 

@@ -1,5 +1,4 @@
-public enum ItemId
-{
+public enum ItemId {
     RedRoomKey,
     BlueRoomKey,
     GreenRoomKey,
