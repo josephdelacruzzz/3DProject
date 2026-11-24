@@ -5732,6 +5732,7 @@ GameObject:
   - component: {fileID: 457717099}
   - component: {fileID: 457717098}
   - component: {fileID: 457717097}
+  - component: {fileID: 700002002}
   m_Layer: 0
   m_Name: BlueUnlock
   m_TagString: Untagged
@@ -5796,7 +5797,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9e3a6cbf4d715a50c8e2f93b15d4a7c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6122,6 +6123,7 @@ GameObject:
   - component: {fileID: 484930953}
   - component: {fileID: 484930952}
   - component: {fileID: 484930951}
+  - component: {fileID: 700002006}
   m_Layer: 8
   m_Name: KeyTeeth
   m_TagString: Untagged
@@ -6202,7 +6204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 8d2f5bae3c604f49b7d1e82a04c3f6b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8470,6 +8472,7 @@ GameObject:
   - component: {fileID: 663761156}
   - component: {fileID: 663761155}
   - component: {fileID: 663761154}
+  - component: {fileID: 700002001}
   m_Layer: 0
   m_Name: RedUnlock
   m_TagString: Untagged
@@ -8534,7 +8537,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7c1e4a9d2b5f4e38a6c0d71f93b2e5a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8655,6 +8658,7 @@ GameObject:
   - component: {fileID: 672534396}
   - component: {fileID: 672534395}
   - component: {fileID: 672534394}
+  - component: {fileID: 700002005}
   m_Layer: 8
   m_Name: KeyBlade
   m_TagString: Untagged
@@ -8735,7 +8739,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9e3a6cbf4d715a50c8e2f93b15d4a7c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16820,6 +16824,7 @@ GameObject:
   - component: {fileID: 1429704849}
   - component: {fileID: 1429704848}
   - component: {fileID: 1429704847}
+  - component: {fileID: 700002004}
   m_Layer: 8
   m_Name: KeyHandle
   m_TagString: Untagged
@@ -16900,7 +16905,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7c1e4a9d2b5f4e38a6c0d71f93b2e5a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19868,6 +19873,7 @@ GameObject:
   - component: {fileID: 1662760923}
   - component: {fileID: 1662760922}
   - component: {fileID: 1662760921}
+  - component: {fileID: 700002003}
   m_Layer: 0
   m_Name: GreenUnlock
   m_TagString: Untagged
@@ -19932,7 +19938,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 8d2f5bae3c604f49b7d1e82a04c3f6b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27232,6 +27238,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flickerAmount: 0.25
   flickerSpeed: 7
+--- !u!114 &700002001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663761153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
+--- !u!114 &700002002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457717096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
+--- !u!114 &700002003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662760920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
+--- !u!114 &700002004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429704845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
+--- !u!114 &700002005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672534392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
+--- !u!114 &700002006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484930949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8e2d1c6a7f4039ae31c05d9f2b6e47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 45
+  bobHeight: 0.15
+  bobSpeed: 1.5
+  pulseSpeed: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
