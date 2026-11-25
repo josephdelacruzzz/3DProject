@@ -72,4 +72,4 @@ End screen:
 - Stamina and Flashlight cooldown
 
 ## Gameplay Video
-- 
+- https://drive.google.com/file/d/1aGaDWeCWiVsBoTuEPE0PsF501i0ZwIwp/view
