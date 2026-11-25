@@ -26380,8 +26380,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001020
 GameObject:
   m_ObjectHideFlags: 0
@@ -26487,8 +26487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001030
 GameObject:
   m_ObjectHideFlags: 0
@@ -26594,8 +26594,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001040
 GameObject:
   m_ObjectHideFlags: 0
@@ -26701,8 +26701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001050
 GameObject:
   m_ObjectHideFlags: 0
@@ -26808,8 +26808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001060
 GameObject:
   m_ObjectHideFlags: 0
@@ -26915,8 +26915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001070
 GameObject:
   m_ObjectHideFlags: 0
@@ -27022,8 +27022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001080
 GameObject:
   m_ObjectHideFlags: 0
@@ -27129,8 +27129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!1 &700001090
 GameObject:
   m_ObjectHideFlags: 0
@@ -27236,8 +27236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9c1a7b84e24c0d9b6f2ad51c7e8043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.25
-  flickerSpeed: 7
+  flickerAmount: 0.55
+  flickerSpeed: 12
 --- !u!114 &700002001
 MonoBehaviour:
   m_ObjectHideFlags: 0
